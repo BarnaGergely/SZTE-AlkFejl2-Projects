@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ConsoleAppProject": {
-      "commandName": "Project",
-      "commandLineArgs": "athletes.csv"
-    }
-  }
-}
