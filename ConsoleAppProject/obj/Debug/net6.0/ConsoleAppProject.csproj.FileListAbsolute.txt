@@ -1,0 +1,14 @@
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.exe
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.deps.json
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.runtimeconfig.json
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.dll
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.pdb
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.GeneratedMSBuildEditorConfig.editorconfig
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.AssemblyInfoInputs.cache
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.AssemblyInfo.cs
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.csproj.CoreCompileInputs.cache
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.dll
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\refint\ConsoleAppProject.dll
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.pdb
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.genruntimeconfig.cache
+G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ref\ConsoleAppProject.dll
