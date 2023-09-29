@@ -25,6 +25,11 @@ namespace ConsoleAppProject
         static string inputPath;
         static string outputPath;
 
+        static void CsvWriter(string path, IEnumerable<TeamRecord>? records)
+        {
+
+        }
+
         static void team(string teamName)
         {
             IEnumerable<TeamRecord> teamQuery =
