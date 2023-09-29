@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "N3r1WCkWXmatT2k2pWsb10EwaACrWJAOFlQYCnqsIJbn0aug7N+hgMBz73tk3b9bBQA6wuc6/JJYrzvqhlP/kA==",
+  "dgSpecHash": "9/1seihu2+jyaNM/0tZzbgXjwoDgbn6WLBJX75YuErDf9hsZclOISq65nA05ZdJOQm74IODkaIimCVgKsx+aXA==",
   "success": true,
   "projectFilePath": "D:\\SZTE\\AlkFejl2)\\SZTE-AlkFejl2-Projects\\ConsoleAppProject\\ConsoleAppProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gery\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

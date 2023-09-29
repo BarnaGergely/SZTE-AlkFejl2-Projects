@@ -12,3 +12,20 @@ G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\D
 G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.pdb
 G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.genruntimeconfig.cache
 G:\Saját meghajtó\SZTE\_23-24 5\Alkfejl2\Gyak\Projekt1\ConsoleAppProject\obj\Debug\net6.0\ref\ConsoleAppProject.dll
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.exe
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.deps.json
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.runtimeconfig.json
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.dll
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\bin\Debug\net6.0\ConsoleAppProject.pdb
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\bin\Debug\net6.0\CsvHelper.dll
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.csproj.AssemblyReference.cache
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.AssemblyInfoInputs.cache
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.AssemblyInfo.cs
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.csproj.CoreCompileInputs.cache
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.csproj.CopyComplete
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.dll
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\refint\ConsoleAppProject.dll
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.pdb
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ConsoleAppProject.genruntimeconfig.cache
+D:\SZTE\AlkFejl2)\SZTE-AlkFejl2-Projects\ConsoleAppProject\obj\Debug\net6.0\ref\ConsoleAppProject.dll
