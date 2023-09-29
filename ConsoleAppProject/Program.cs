@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 /* TODO:
  * kész | CSV Kiiratás
- * Metódusok nagybetsűsítése
+ * kész | Metódusok nagybetsűsítése
  * osztály adattagok kisbetűsítése
  * nem kell | megoldani hogy a NA (0) érték ne számolódjon bele a statisztikába
  * nem kell | NA kiiratás javítása
@@ -58,7 +58,7 @@ namespace ConsoleAppProject
                 from record in dataBase
                 where record.Team == teamName
                 select record;
-            int teamCount = teamQuery.ToList<TeamRecord>().Count();
+            int teamCount = teamQuery.ToList().Count();
 
             Console.WriteLine("The number of players in the " + teamName + " team: " + teamCount);
             CsvWriter(outputPath, "team-" + teamName + ".csv", new int[] { teamCount });
@@ -83,7 +83,7 @@ namespace ConsoleAppProject
             {
                 countQuery =
                     from record in dataBase
-                    where record.Height >= lowerLimit && record.Age <= upperLimit
+                    where record.Height >= lowerLimit && record.Height <= upperLimit
                     select record;
             }
 
@@ -91,7 +91,7 @@ namespace ConsoleAppProject
             {
                 countQuery =
                     from record in dataBase
-                    where record.Weight >= lowerLimit && record.Age <= upperLimit
+                    where record.Weight >= lowerLimit && record.Weight <= upperLimit
                     select record;
             }
             else
@@ -164,28 +164,18 @@ namespace ConsoleAppProject
             Console.Write("Validateing arguments....");
             if (args == null || args.Length < 2)
             {
+                Console.WriteLine("FAIL");
                 Console.WriteLine("Critical error: Less than 2 parameters");
                 return;
             }
             else if (args.Length > 2)
             {
+                Console.WriteLine("FAIL");
                 Console.WriteLine("Critical error: More than 2 parameters");
                 return;
             }
             else
             {
-                /* argumentumok tartalmának validálása
-                // egyáltalán szükség van erre?
-                foreach (string arg in args) {
-
-                }
-
-                 Regex locationRegex = new Regex(@"^(?:[a-zA-Z]\:|\\\\[\w\.]+\\[\w.$]+)\\(?:[\w]+\\)*\w([\w.])+$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-
-                if (!locationRegex.Mach(args[0])) Console.WriteLine("this is not a valid file path");
-                // TODO: ezt megcsinálni másra is
-                */
-
                 inputPath = args[0];
                 outputPath = args[1];
                 Console.WriteLine("DONE");

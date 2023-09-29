@@ -2,7 +2,7 @@
   "profiles": {
     "ConsoleAppProject": {
       "commandName": "Project",
-      "commandLineArgs": "../../../../athletes.csv ?54545"
+      "commandLineArgs": "../../../../athletes.csv ../../../../"
     }
   }
 }
