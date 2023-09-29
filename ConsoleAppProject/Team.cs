@@ -74,7 +74,7 @@ namespace ConsoleAppProject
             Map(m => m.Weight).TypeConverter<FloatConverter<float>>().Name("Weight");
             Map(m => m.Team).Name("Team");
             Map(m => m.NOC).Name("NOC");
-             
+
         }
     }
 }
