@@ -5,37 +5,25 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using static System.Formats.Asn1.AsnWriter;
 
+/* TODO:
+ * CSV Kiiratás
+ * Metódusok nagybetsűsítése
+ * osztály adattagok kisbetűsítése
+ * megoldani hogy a NA (0) érték ne számolódjon bele a statisztikába
+ * NA kiiratás javítása
+ * betöltéskori hiba kezelés tesztelése
+    * üres adatbázis probléma
+ */
+
 namespace ConsoleAppProject
 {
 
     internal class Program
     {
         static IEnumerable<TeamRecord>? dataBase;
-        /*
-            - Init
-                 - parancssori paraméterek betöltése, hibás input kezelés (2 paraméter adható pontosan meg)
-                 - adatok betöltése CSV fájlból, hibás input kezelés
-            - TerminalLoop
-         */
-        static void terminate(string message)
-        {
-            Console.WriteLine(message);
-            System.Environment.Exit(1);
-        }
 
-        static void init()
-        {
-
-        }
-
-        static void validateParameters(string[] args)
-        {
-        }
-
-        static void terminalLoop()
-        {
-
-        }
+        static string inputPath;
+        static string outputPath;
 
         static void team(string teamName)
         {
@@ -47,20 +35,20 @@ namespace ConsoleAppProject
             Console.WriteLine(teamQuery.ToList<TeamRecord>().Count());
         }
 
-        static void count(string columName, int lowerLimit, int upperLimit)
+        static void count(string columnName, int lowerLimit, int upperLimit)
         {
             IEnumerable<TeamRecord> countQuery =
                     from record in dataBase
                     select record;
 
-            if (columName == "Age")
+            if (columnName == "Age")
             {
                 countQuery =
                     from record in dataBase
                     where record.Age >= lowerLimit && record.Age <= upperLimit
                     select record;
             }
-            else if (columName == "Height")
+            else if (columnName == "Height")
             {
                 countQuery =
                     from record in dataBase
@@ -68,7 +56,7 @@ namespace ConsoleAppProject
                     select record;
             }
 
-            else if (columName == "Weight")
+            else if (columnName == "Weight")
             {
                 countQuery =
                     from record in dataBase
@@ -88,30 +76,68 @@ namespace ConsoleAppProject
             }
         }
 
-
-
-
-
-
-        static void average(string a, string b)
+        static void average(string team, string columnName)
         {
+            double averageQuery =
+                    (from rec in dataBase.ToList()
+                     select rec.Age)
+                     .Average(rec => rec);
+            try
+            {
+                if (columnName == "Age")
+                {
+                    averageQuery =
+                        (from rec in dataBase.ToList()
+                         where rec.Team == team
+                         select rec.Age)
+                        .Average(rec => rec);
+                }
+
+                else if (columnName == "Height")
+                {
+                    averageQuery =
+                        (from rec in dataBase.ToList()
+                         where rec.Team == team
+                         select rec.Height)
+                        .Average(rec => rec);
+                }
+
+                else if (columnName == "Weight")
+                {
+                    averageQuery =
+                        (from rec in dataBase.ToList()
+                         where rec.Team == team
+                         select rec.Weight)
+                        .Average(rec => rec);
+                }
+
+                else
+                {
+                    Console.WriteLine("Column name not found");
+                    return;
+                }
+
+                Console.WriteLine(averageQuery);
+            }
+            catch (System.InvalidOperationException e)
+            {
+                Console.WriteLine("No such team name found.");
+            }
+
 
         }
         static void Main(string[] args)
         {
-            string inputPath;
-            string outputPath;
 
-            #region init
-            #region validateParameters
+            #region validate parameters
             if (args == null || args.Length < 2)
             {
-                terminate("Critical error: Less than 2 parameters");
+                Console.WriteLine("Critical error: Less than 2 parameters");
                 return;
             }
             else if (args.Length > 2)
             {
-                terminate("Critical error: More than 2 parameters");
+                Console.WriteLine("Critical error: More than 2 parameters");
                 return;
             }
             else
@@ -133,19 +159,7 @@ namespace ConsoleAppProject
             }
             #endregion
 
-
-            #region loading CSV file
-            /* TODO hiba kezelés
-            try
-            {
-
-            }
-            catch ()
-            {
-                terminate("wrong file path or the file does not exists")
-            }
-            */
-
+            #region CSV loader
             try
             {
                 using (var reader = new StreamReader(inputPath))
@@ -158,24 +172,19 @@ namespace ConsoleAppProject
             }
             catch (System.IO.FileNotFoundException e)
             {
-                terminate(e.Message);
+                Console.WriteLine(e.Message);
                 return;
             }
-
-            Console.WriteLine("csv successfully loaded.");
-
             #endregion
-            #endregion
+
 
             #region terminalLoop
 
-            string userInput;
-
             Regex teamRegex = new Regex(@"^team [a-zA-Z]+", RegexOptions.Compiled);
             Regex countRegex = new Regex(@"^count [a-zA-Z]+ [0-9]+ [0-9]+$", RegexOptions.Compiled);
-            Regex averageRegex = new Regex(@"^avarage [a-zA-Z]+ [0-9]+$", RegexOptions.Compiled);
+            Regex averageRegex = new Regex(@"^average [a-zA-Z]+ [a-zA-Z]+$", RegexOptions.Compiled);
 
-            do
+            string userInput;
             {
                 userInput = Console.ReadLine();
 
@@ -208,7 +217,8 @@ namespace ConsoleAppProject
                 }
 
 
-            } while (userInput != "stop");
+            } while (userInput != "stop") ;
+
             #endregion
         }
     }
